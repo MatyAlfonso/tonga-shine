@@ -1,7 +1,15 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
 
-img.logo{
-    width: 100px;
-    height: 75px;
+/**img.logo{
+    width: 160px;
+    height: 120px;
+}**/
+nav.navbar .navbar-brand img.logo{
+    width: 150px;
+}
+@media (max-width: 1440px) {
+    nav.navbar .navbar-brand img.logo{
+        width: 150px;
+    }
 }
