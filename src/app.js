@@ -29,9 +29,17 @@ app.set('views', path.join(__dirname, '/views'));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var aboutRouter = require('./routes/about');
+var servicesRouter = require('./routes/services');
+var galleryRouter = require('./routes/gallery');
+var contactRouter = require('./routes/contact');
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/about', aboutRouter);
+app.use('/services', servicesRouter);
+app.use('/gallery', galleryRouter);
+app.use('/contact', contactRouter);
 
 
 // ************ DON'T TOUCH FROM HERE ************
