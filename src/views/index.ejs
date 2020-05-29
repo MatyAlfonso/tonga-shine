@@ -17,7 +17,7 @@
 
   <!-- Site Icons -->
   <link rel="shortcut icon" href="images/logo-tonga.png" type="image/x-icon">
-  
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -36,115 +36,48 @@
 </head>
 
 <body>
-  <!-- Start Main Top -->
-  <header class="main-header">
-    <!-- Start Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
-      <div class="container">
-        <!-- Start Header Navigation -->
-        <div class="navbar-header">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand" href="/">
-            <img src="images/logo-tonga.png" class="logo" alt="logo de Tonga's Shine Detailing">
-          </a>
-        </div>
-        <!-- End Header Navigation -->
+  <!-- Navbar -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-menu">
-          <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-            <li class="nav-item active"><a class="nav-link" href="/">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="/about">Acerca de nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="/services">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="/gallery">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+  <%- include('partials/navbar') %>
 
+  <!-- end Navbar-->
 
-        <!-- Start Side Menu -->
-        <div class="side">
-          <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-          <li class="cart-box">
-            <ul class="cart-list">
-              <li>
-                <a href="#" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
-                <h6><a href="#">Delica omtantur </a></h6>
-                <p>1x - <span class="price">$80.00</span></p>
-              </li>
-              <li>
-                <a href="#" class="photo"><img src="images/img-pro-02.jpg" class="cart-thumb" alt="" /></a>
-                <h6><a href="#">Omnes ocurreret</a></h6>
-                <p>1x - <span class="price">$60.00</span></p>
-              </li>
-              <li>
-                <a href="#" class="photo"><img src="images/img-pro-03.jpg" class="cart-thumb" alt="" /></a>
-                <h6><a href="#">Agam facilisis</a></h6>
-                <p>1x - <span class="price">$40.00</span></p>
-              </li>
-              <li class="total">
-                <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                <span class="float-right"><strong>Total</strong>: $180.00</span>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <!-- End Side Menu -->
-    </nav>
-    <!-- End Navigation -->
-  </header>
-  <!-- End Main Top -->
-
-  <!-- Start Top Search -->
-  <div class="top-search">
-    <div class="container">
-      <div class="input-group">
-        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-        <input type="text" class="form-control" placeholder="Search">
-        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-      </div>
-    </div>
-  </div>
-  <!-- End Top Search -->
 
   <!-- Start Slider -->
   <div id="slides-shop" class="cover-slides">
     <ul class="slides-container">
       <li class="text-center">
-        <img src="images/banner-01.jpg" alt="">
+        <img src="images/porsche.jpg" alt="">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h1 class="m-b-20"><strong>Bienvenido a <br> Tonga's Shine Detailing</strong></h1>
-              <p class="m-b-40">El sitio web del Detailing</p>
-              <p><a class="btn hvr-hover" href="#">Explorar</a></p>
+              <p class="m-b-40">Detallado profesional</p>
+              <p><a class="btn hvr-hover" href="/services">¡Comencemos!</a></p>
             </div>
           </div>
         </div>
       </li>
       <li class="text-center">
-        <img src="images/banner-02.jpg" alt="">
+        <img src="images/mini.jpg" alt="">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h1 class="m-b-20"><strong>Bienvenido a <br> Tonga's Shine Detailing</strong></h1>
-              <p class="m-b-40">El sitio web del Detailing</p>
-              <p><a class="btn hvr-hover" href="#">Explorar</a></p>
+              <p class="m-b-40">Detallado profesional</p>
+              <p><a class="btn hvr-hover" href="/services">¡Comencemos!</a></p>
             </div>
           </div>
         </div>
       </li>
       <li class="text-center">
-        <img src="images/banner-03.jpg" alt="">
+        <img src="images/moto.jpg" alt="">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h1 class="m-b-20"><strong>Bienvenido a <br> Tonga's Shine Detailing</strong></h1>
-              <p class="m-b-40">El sitio web del Detailing</p>
-              <p><a class="btn hvr-hover" href="#">Explorar</a></p>
+              <p class="m-b-40">Detallado profesional</p>
+              <p><a class="btn hvr-hover" href="/services">¡Comencemos!</a></p>
             </div>
           </div>
         </div>
@@ -163,20 +96,20 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="shop-cat-box">
-            <img class="img-fluid" src="images/categories_img_01.jpg" alt="" />
-            <a class="btn hvr-hover" href="#">Lorem ipsum dolor</a>
+            <img class="img-fluid" src="images/fb-card.jpg" alt="" />
+            <a class="btn hvr-hover" href="https://www.facebook.com/TongasShineDetailing/">¡Visita nuestro Facebook! </a>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="shop-cat-box">
-            <img class="img-fluid" src="images/categories_img_02.jpg" alt="" />
-            <a class="btn hvr-hover" href="#">Lorem ipsum dolor</a>
+            <img class="img-fluid" src="images/yt.jpg" alt="" />
+            <a class="btn hvr-hover" href="https://www.youtube.com/channel/UCMRXrKCCGOgPRqIIvl0yiIQ">¡Visita nuestro canal de YouTube!</a>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <div class="shop-cat-box">
-            <img class="img-fluid" src="images/categories_img_03.jpg" alt="" />
-            <a class="btn hvr-hover" href="#">Lorem ipsum dolor</a>
+            <img class="img-fluid" src="images/ig-card.jpg" alt="" />
+            <a class="btn hvr-hover" href="https://www.instagram.com/tongashinedetailing/?hl=es-la">¡Visita nuestro Instagram!</a>
           </div>
         </div>
       </div>
@@ -186,15 +119,10 @@
 
   <div class="box-add-products">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="row">     
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="offer-box-products">
-            <img class="img-fluid" src="images/add-img-01.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="offer-box-products">
-            <img class="img-fluid" src="images/add-img-02.jpg" alt="" />
+            <img class="img-fluid" src="images/promo2.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -202,168 +130,15 @@
   </div>
 
   <!-- Start Instagram Feed  -->
-  <div class="instagram-box">
-    <div class="main-instagram owl-carousel owl-theme">
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-01.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-02.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-03.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-04.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-05.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-06.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-07.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-08.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-09.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="ins-inner-box">
-          <img src="images/instagram-img-05.jpg" alt="" />
-          <div class="hov-in">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%- include('partials/ig-feed') %>
   <!-- End Instagram Feed  -->
 
-
   <!-- Start Footer  -->
-  <footer>
-    <div class="footer-main">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="footer-top-box">
-              <h3>Horarios de atención</h3>
-              <ul class="list-time">
-                <li>Lunes - Viernes: 8.30hs a 18.00hs</li>
-                <li>Sábados: 9.00hs a 14:00hs</li>
-                <li>Domingos: <span>Cerrado</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="footer-top-box">
-              <h3>Redes sociales</h3>
-              <p>¡Seguinos en las redes!</p>
-              <ul>
-                <li><a href="https://www.facebook.com/TongasShineDetailing/"><i class="fab fa-facebook"
-                      aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/tongashinedetailing/?hl=es-la"><i class="fab fa-instagram"
-                      aria-hidden="true"></i></a></li>
-                <li><a href="https://wa.me/5491130524200"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCMRXrKCCGOgPRqIIvl0yiIQ"><i class="fab fa-youtube"
-                      aria-hidden="true"></i></a></li>
-
-              </ul>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="footer-widget">
-              <h4>Acerca de Tonga's Shine Detailing</h4>
-              <p>Somos una empresa dedicada a la estética vehicular con más de 10 años de experiencia en el rubro.
-                Estamos en constante perfeccionamiento para brindarles la mejor atención y resultados de excelencia.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="footer-link-contact">
-              <h4>Contacto</h4>
-              <ul>
-                <li>
-                  <p><i class="fas fa-map-marker-alt"></i>Dirección: Lisandro de la Torre 228 <br>Los Troncos del
-                    Talar,<br>
-                    Buenos Aires </p>
-                </li>
-                <li>
-                  <p><i class="fas fa-phone-square"></i>Teléfono: <a href="tel:+54 9 11 3052-4200">+54 9 11
-                      3052-4200</a></p>
-                </li>
-                <li>
-                  <p><i class="fas fa-envelope"></i>Email: <a
-                      href="mailto:tongashine@gmail.com">tongashine@gmail.com</a></p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <%- include('partials/footer') %>
   <!-- End Footer  -->
 
   <!-- Start copyright  -->
-  <div class="footer-copyright">
-    <p class="footer-company">Todos los derechos reservados &copy; 2020 <a href="#">Tonga's Shine Detailing</a> |
-      Desarrollado por :
-      <a href="https://html.design/">AEM desarrollo web</a></p>
-  </div>
+  <%- include('partials/copyright') %>
   <!-- End copyright  -->
 
   <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
