@@ -8,6 +8,20 @@
 nav.navbar .navbar-brand img.logo{
     width: 150px;
 }
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
 @media (max-width: 1440px) {
     nav.navbar .navbar-brand img.logo{
         width: 150px;

@@ -2368,7 +2368,7 @@
 }
  .contact-info-left{
      padding: 20px;
-     background: url(../images/contact-bg.jpg) no-repeat center;
+     background-color: ghostwhite;
 	 background-size: cover;
 }
  .contact-info-left h2{
