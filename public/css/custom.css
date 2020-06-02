@@ -22,6 +22,13 @@ nav.navbar .navbar-brand img.logo{
     width: 100% !important;
     height: 100% !important;
 }
+.sub-title{
+    color: ghostwhite;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px 0px;
+}
+
 @media (max-width: 1440px) {
     nav.navbar .navbar-brand img.logo{
         width: 150px;
